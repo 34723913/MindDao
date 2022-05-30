@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>明道上傳網址平台</title>
+</head>
+<body>
+	{% if website == "" %}
+	<form method="post">
+		<!-- autocomplete off -->
+		<input placeholder="請輸入網址" type="text" name ="user">
+		<input type="submit" name ="send" value="送出">
+	</form>
+	{% else %}
+	<p>已把  {{website}}  送出到明道中學英聽平台!</p>
+	{% endif %}
+</body>
+</html>
